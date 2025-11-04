@@ -1,0 +1,15 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyAmplifyPipelineDeployDeletes",
+      "Effect": "Deny",
+      "Action": [
+        "amplify:Delete*",
+        "codepipeline:Delete*",
+        "codedeploy:Delete*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
