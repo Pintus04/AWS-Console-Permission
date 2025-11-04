@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyAllDeleteActions",
+      "Effect": "Deny",
+      "Action": [
+        "s3:Delete*",
+        "ec2:Delete*",
+        "iam:Delete*",
+        "rds:Delete*",
+        "lambda:Delete*",
+        "cloudwatch:Delete*",
+        "logs:Delete*",
+        "ecr:Delete*",
+        "ecs:Delete*",
+        "eks:Delete*",
+        "cloudformation:Delete*",
+        "sns:Delete*",
+        "sqs:Delete*",
+        "kms:ScheduleKeyDeletion",
+        "kms:CancelKeyDeletion"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
